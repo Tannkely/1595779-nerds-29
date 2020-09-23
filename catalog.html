@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Каталог — Nerds</title>
@@ -7,76 +8,141 @@
 
 <body>
 
-<header>
-  <nav>
-    <a href="index.html">
-      <img src="https://via.placeholder.com/159,87x65,02" alt="Логотип Nerds">
-    </a>
-    <ul>
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li>Магазин</li>
-      <li><a href="blank.html">Контакты</a></li>
-    </ul>
-    <a href="blank.html">Корзина</a>
-  </nav>
-</header>
-<main>
-    <h1>Cтоимость готовых шаблонов</h1>
-    <ul>
-        <li>Стоимость</li>
-        <li>Сортировать</li>
-        <li><a href="blank.html">По цене</a></li>
-        <li><a href="blank.html">По типу</a></li>
-        <li><a href="blank.html">По названию </a></li>
-    </ul>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="https://via.placeholder.com/159,87x65,02" alt="Логотип Nerds">
+      </a>
+      <ul>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li>Магазин</li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <a href="blank.html">Корзина</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+
+    <div class="container">
+
+      <div class="filters">
+
+        <div class="filter">
+          <div class="filters-header">
+            <p>Стоимость</p>
+          </div>
+
+          <div class="filters-content">
+
+            <div class="range">
+              ...
+            </div>
+
+            <label for="cost-from">
+              <span>
+                От 0
+              </span>
+              <input type="number" name="cost-from" id="cost-from">
+            </label>
+
+            <label for="cost-to">
+              <span>
+                До 15000
+              </span>
+              <input type="number" name="cost-to" id="cost-to">
+            </label>
+
+          </div>
+
+
+        </div>
+
+        <div class="filter">
+          <div class="filters-header">
+            <p>Сетка</p>
+          </div>
+          <div class="filters-content">
+            <label for="filter-grid-adaptive">
+              <span>Адаптивная</span>
+              <input type="radio" name="grid" id="filter-grid-adaptive">
+            </label>
+            <label for="filter-grid-fixed">
+              <span>Фиксированная</span>
+              <input type="radio" name="grid" id="filter-grid-fixed">
+            </label>
+            <label for="filter-grid-">
+              <span>Резиновая</span>
+              <input type="radio" name="grid" id="filter-grid-">
+            </label>
+          </div>
+        </div>
+
+        <div class="filter">
+          <div class="filters-header">
+            <p>Особенности</p>
+          </div>
+          <div class="filters-content">
+            <label for="filter-qualities-">
+              <span>Слайдер</span>
+              <input type="checkbox" name="qualities" id="filter-qualities-slider">
+            </label>
+            <label for="filter-qualities-">
+              <span>Блок преимуществ</span>
+              <input type="checkbox" name="qualities" id="filter-qualities-advantages">
+            </label>
+            <label for="filter-qualities-">
+              <span>Новости</span>
+              <input type="checkbox" name="qualities" id="filter-qualities-news">
+            </label>
+            <label for="filter-qualities-">
+              <span>Галерея</span>
+              <input type="checkbox" name="qualities" id="filter-qualities-gallery">
+            </label>
+            <label for="filter-qualities-">
+              <span>Корзина</span>
+              <input type="checkbox" name="qualities" id="filter-qualities-basket">
+            </label>
+          </div>
+        </div>
+
+        <button>Показать</button>
+      </div>
+
       <section>
-        <h2>Фильтр шаблонов</h2>
-      </section>
-      <section>
-        <h2>Список шаблонов</h2>
+
+        <div class="sorting">
+
+        </div>
+
         <ul>
-            <li>
-                <a href="product.html">
-                    <p>
-                      <img src="img/sedona-1.jpg" width="359px" height="578px" alt="Шаблон SEDONA">
-                    </p>
-                  </a>
-                  <p>
-                    <button type="button">9 900₽</button>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <img src="img/pink-1.jpg" width="358px" height="578px" alt="Шаблон PINK-1">
-                  </p>
-            </li>
-            <li>
-                <p>
-                    <img src="img/barbershop-1.jpg" width="358px" height="578px" alt="Шаблон BARBERSHOP-1">
-                  </p>
-            </li>
-            <li>
-                <p>
-                    <img src="img/mishka-1.jpg" width="359px" height="578px" alt="Шаблон MISHKA-1">
-                  </p>
-            </li>
-            <li>
-                <p>
-                    <img src="img/pink-1.jpg" width="358px" height="578px" alt="Шаблон PINK">
-                  </p>
-            </li>
-                <li>
-                    <p>
-                        <img src="img/aplus-1.jpg" width="358px" height="578px" alt="Шаблон APLUS-1">
-                      </p>
-            </li>
-            <li>
-                 <p>
-                    <img src="img/kvast-1.jpg" width="359px" height="578px" alt="Шаблон KVAST-1">
-                   </p>
-            </li>
-          </ul> 
+          <li>
+                <img src="img/sedona-1.jpg" width="359px" height="578px" alt="Шаблон SEDONA">
+              <span>9 900₽</span>
+          </li>
+          <li>
+              <img src="img/pink-1.jpg" width="358px" height="578px" alt="Шаблон PINK-1">
+          </li>
+          <li>
+              <img src="img/barbershop-1.jpg" width="358px" height="578px" alt="Шаблон BARBERSHOP-1">
+          </li>
+          <li>
+              <img src="img/mishka-1.jpg" width="359px" height="578px" alt="Шаблон MISHKA-1">
+          </li>
+          <li>
+              <img src="img/pink-1.jpg" width="358px" height="578px" alt="Шаблон PINK">
+          </li>
+          <li>
+              <img src="img/aplus-1.jpg" width="358px" height="578px" alt="Шаблон APLUS-1">
+          </li>
+          <li>
+              <img src="img/kvast-1.jpg" width="359px" height="578px" alt="Шаблон KVAST-1">
+          </li>
+        </ul>
+
+        <div class="pagination">
           <ul>
             <li>
               <a>1</a>
@@ -91,8 +157,12 @@
               <a href="#">Следующая</a>
             </li>
           </ul>
-    </section>
-  
+        </div>
+
+      </section>
+
+    </div>
+
   </main>
   <footer>
     <section>
@@ -110,6 +180,7 @@
         </li>
       </ul>
     </section>
-</footer>
+  </footer>
 </body>
+
 </html>
