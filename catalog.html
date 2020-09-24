@@ -38,148 +38,214 @@
           <div class="filters-content">
 
             <div class="range">
-              ...
+              <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+
             </div>
 
-            <label for="cost-from">
-              <span>
-                От 0
-              </span>
-              <input type="number" name="cost-from" id="cost-from">
-            </label>
-
-            <label for="cost-to">
-              <span>
-                До 15000
-              </span>
-              <input type="number" name="cost-to" id="cost-to">
-            </label>
-
           </div>
 
-
-        </div>
-
-        <div class="filter">
-          <div class="filters-header">
-            <p>Сетка</p>
+          <div class="filter">
+            <div class="filters-header">
+              <p>Сетка</p>
+            </div>
+            <div class="filters-content">
+              <label for="filter-grid-adaptive">
+                <input type="radio" name="grid" id="filter-grid-adaptive">
+                <span>Адаптивная</span>
+              </label>
+              <label for="filter-grid-fixed">
+                <input type="radio" name="grid" id="filter-grid-fixed">
+                <span>Фиксированная</span>
+              </label>
+              <label for="filter-grid-">
+                <input type="radio" name="grid" id="filter-grid-fluid">
+                <span>Резиновая</span>
+              </label>
+            </div>
           </div>
-          <div class="filters-content">
-            <label for="filter-grid-adaptive">
-              <span>Адаптивная</span>
-              <input type="radio" name="grid" id="filter-grid-adaptive">
-            </label>
-            <label for="filter-grid-fixed">
-              <span>Фиксированная</span>
-              <input type="radio" name="grid" id="filter-grid-fixed">
-            </label>
-            <label for="filter-grid-">
-              <span>Резиновая</span>
-              <input type="radio" name="grid" id="filter-grid-">
-            </label>
+
+          <div class="filter">
+            <div class="filters-header">
+              <p>Особенности</p>
+            </div>
+            <div class="filters-content">
+              <label for="filter-qualities-">
+                <span>Слайдер</span>
+                <input type="checkbox" name="qualities" id="filter-qualities-slider">
+              </label>
+              <label for="filter-qualities-">
+                <span>Блок преимуществ</span>
+                <input type="checkbox" name="qualities" id="filter-qualities-advantages">
+              </label>
+              <label for="filter-qualities-">
+                <span>Новости</span>
+                <input type="checkbox" name="qualities" id="filter-qualities-news">
+              </label>
+              <label for="filter-qualities-">
+                <span>Галерея</span>
+                <input type="checkbox" name="qualities" id="filter-qualities-gallery">
+              </label>
+              <label for="filter-qualities-">
+                <span>Корзина</span>
+                <input type="checkbox" name="qualities" id="filter-qualities-basket">
+              </label>
+            </div>
           </div>
-        </div>
 
-        <div class="filter">
-          <div class="filters-header">
-            <p>Особенности</p>
-          </div>
-          <div class="filters-content">
-            <label for="filter-qualities-">
-              <span>Слайдер</span>
-              <input type="checkbox" name="qualities" id="filter-qualities-slider">
-            </label>
-            <label for="filter-qualities-">
-              <span>Блок преимуществ</span>
-              <input type="checkbox" name="qualities" id="filter-qualities-advantages">
-            </label>
-            <label for="filter-qualities-">
-              <span>Новости</span>
-              <input type="checkbox" name="qualities" id="filter-qualities-news">
-            </label>
-            <label for="filter-qualities-">
-              <span>Галерея</span>
-              <input type="checkbox" name="qualities" id="filter-qualities-gallery">
-            </label>
-            <label for="filter-qualities-">
-              <span>Корзина</span>
-              <input type="checkbox" name="qualities" id="filter-qualities-basket">
-            </label>
-          </div>
-        </div>
+          <button class="btn" type="submit">Показать</button>
 
-        <button>Показать</button>
-      </div>
+          <section>
 
-      <section>
+            <div class="sorting">
 
-        <div class="sorting">
-
-        </div>
-
-        <ul>
-          <li>
+            </div>
+            <article class="layout">
+              <div class="image-content">
                 <img src="img/sedona-1.jpg" width="359px" height="578px" alt="Шаблон SEDONA">
-              <span>9 900₽</span>
-          </li>
-          <li>
-              <img src="img/pink-1.jpg" width="358px" height="578px" alt="Шаблон PINK-1">
-          </li>
-          <li>
-              <img src="img/barbershop-1.jpg" width="358px" height="578px" alt="Шаблон BARBERSHOP-1">
-          </li>
-          <li>
-              <img src="img/mishka-1.jpg" width="359px" height="578px" alt="Шаблон MISHKA-1">
-          </li>
-          <li>
-              <img src="img/pink-1.jpg" width="358px" height="578px" alt="Шаблон PINK">
-          </li>
-          <li>
-              <img src="img/aplus-1.jpg" width="358px" height="578px" alt="Шаблон APLUS-1">
-          </li>
-          <li>
-              <img src="img/kvast-1.jpg" width="359px" height="578px" alt="Шаблон KVAST-1">
-          </li>
-        </ul>
+              </div>
+              <div class="layout-menu">
+                <h2>Sedona</h2>
+                <p>Информационный сайт для туристов</p>
+                <button class="btn" type="submit">9 900 руб.</button>
+              </div>
+            </article>
 
-        <div class="pagination">
-          <ul>
-            <li>
-              <a>1</a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#">Следующая</a>
-            </li>
-          </ul>
+            <article class="layout">
+              <div class="layout-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="image-content">
+                <img src="img/pink-1.jpg" width="358px" height="578px" alt="Шаблон PINK-1">
+              </div>
+              <div class="layout-menu">
+                <h2>Pink APP</h2>
+                <p>Продуктовый лендинг приложения для IOS и Android</p>
+                <button class="btn" type="submit">9 900 руб.</button>
+              </div>
+            </article>
+
+            <article class="layout">
+              <div class="layout-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="image-content">
+                <img src="img/barbershop-1.jpg" width="358px" height="578px" alt="Шаблон BARBERSHOP-1">
+              </div>
+              <div class="layout-menu">
+                <h2>Barbershop</h2>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <button class="btn" type="submit">9 900 руб.</button>
+              </div>
+            </article>
+
+            <article class="layout">
+              <div class="layout-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="image-content">
+                <img src="img/mishka-1.jpg" width="359px" height="578px" alt="Шаблон MISHKA-1">
+              </div>
+              <div class="layout-menu">
+                <h2>Mishka</h2>
+                <p>Интернет-магазин вязанных игрушек</p>
+                <button class="btn" type="submit">9 900 руб.</button>
+              </div>
+            </article>
+
+            <article class="layout">
+              <div class="layout-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="image-content">
+                <img src="img/aplus-1.jpg" width="358px" height="578px" alt="Шаблон A PLUS-1">
+              </div>
+              <div class="layout-menu">
+                <h2>A Plus</h2>
+                <p>Лендинг курсов повышения квалификации</p>
+                <button class="btn" type="submit">9 900 руб.</button>
+              </div>
+            </article>
+
+            <article class="layout">
+              <div class="layout-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="image-content">
+                <img src="img/kvast-1.jpg" width="359px" height="578px" alt="Шаблон KVAST-1">
+              </div>
+              <div class="layout-menu">
+                <h2>Kvast</h2>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <button class="btn" type="submit">9 900 руб.</button>
+              </div>
+            </article>
+
+            <div class="pagination">
+              <ul>
+                <li>
+                  <a>1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#next">Следующая</a>
+                </li>
+              </ul>
+            </div>
+
+          </section>
+
         </div>
 
-      </section>
+        <section class="map-section">
+          <h2 class="visually-hidden">Наши контакты:</h2>
+          <div id="map"></div>
+          <div class="address-card">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
+              <a href="tel:+7 (812) 275-75-75">+7 (812) 275-75-75</a>
+            </p>
+            <button class="btn">Напишите нам</button>
+          </div>
+        </section>
+  </main>
+  <footer class="main-footer container">
 
+    <div class="social">
+      <a class="icon" href="#">
+        <span class="circle vk"></span>
+      </a>
+      <a class="icon" href="#">
+        <span class="circle fb"></span>
+      </a>
+      <a class="icon" href="#">
+        <span class="circle insta"></span>
+      </a>
+    </div>
+    <div class="footer-clogan">
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
 
-  </main>
-  <footer>
-    <section>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-      <ul>
-        <li>
-          <a href="#">Вконтакте</a>
-        </li>
-        <li>
-          <a href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Инстаграм</a>
-        </li>
-      </ul>
-    </section>
   </footer>
 </body>
 
