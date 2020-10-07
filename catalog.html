@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог: Нёрдс</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 </head>
 
 <body>
@@ -41,98 +41,104 @@
     <div class="page-title slogan">
       <h1>Магазин готовых шаблонов</h1>
     </div>
+
     <section class="products-section container">
 
       <div class="content">
         <div class="container">
           <div class="filters">
-            <p>Стоимость</p>
+
+            <p class="component">Стоимость:</p>
 
             <form class="form" action="form.php" method="GET">
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
                 </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
 
-                <div class="filters-content">
+              <div class="filters-content">
 
-                  <div class="range">
-                    <label class="min-price">от<input name="min-price" type="text" value="0"></label>
-                    <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
-
-                  </div>
+                <div class="range">
+                  <label class="min-price">от<input name="min-price" type="text" class="min" value="0"></label>
+                  <label class="max-price">до<input name="max-price" type="text" class="max" value="15 000"></label>
 
                 </div>
 
               </div>
 
-              <div class="web">
-                <div class="filters-header">
-                  <p>Сетка</p>
-                </div>
-                <div class="filters-content">
-                  <label for="filter-grid-adaptive">
-                    <input type="radio" name="grid" id="filter-grid-adaptive">
-                    <span>Адаптивная</span>
-                  </label>
-                  <label for="filter-grid-fixed">
-                    <input type="radio" name="grid" id="filter-grid-fixed">
-                    <span>Фиксированная</span>
-                  </label>
-                  <label for="filter-grid-fluid">
-                    <input type="radio" name="grid" id="filter-grid-fluid">
-                    <span>Резиновая</span>
-                  </label>
-                </div>
-              </div>
+            </div>
 
-              <div class="features">
-                <div class="filters-header">
-                  <p>Особенности</p>
-                </div>
-                <div class="filters-content">
-                  <label for="filter-qualities-slider">
-                    <span>Слайдер</span>
-                    <input type="checkbox" name="slider" id="filter-qualities-slider">
-                  </label>
-                  <label for="filter-qualities-advantages">
-                    <span>Блок преимуществ</span>
-                    <input type="checkbox" name="advantages" id="filter-qualities-advantages">
-                  </label>
-                  <label for="filter-qualities-news">
-                    <span>Новости</span>
-                    <input type="checkbox" name="news" id="filter-qualities-news">
-                  </label>
-                  <label for="filter-qualities-">
-                    <span>Галерея</span>
-                    <input type="checkbox" name="qualities" id="filter-qualities-gallery">
-                  </label>
-                  <label for="filter-qualities-gallery">
-                    <span>Корзина</span>
-                    <input type="checkbox" name="gallery" id="filter-qualities-gallery">
-                  </label>
-                </div>
+            <div class="web">
+              <div class="filters-header">
+                <p class="component">Сетка:</p>
               </div>
+              <div class="filters-content">
+                <label for="filter-grid-adaptive">
+                  <input type="radio" name="grid" id="filter-grid-adaptive">
+                  <span>Адаптивная</span>
+                </label>
+                <label for="filter-grid-fixed">
+                  <input type="radio" name="grid" id="filter-grid-fixed">
+                  <span>Фиксированная</span>
+                </label>
+                <label for="filter-grid-fluid">
+                  <input type="radio" name="grid" id="filter-grid-fluid">
+                  <span>Резиновая</span>
+                </label>
+              </div>
+            </div>
 
-              <button class="btn" type="submit">Показать</button>
+            <div class="features">
+              <div class="filters-header">
+                <p class="component">Особенности:</p>
+              </div>
+              <div class="filters-content">
+                <label for="filter-qualities-slider">
+                  <span>Слайдер</span>
+                  <input type="checkbox" name="slider" id="filter-qualities-slider">
+                </label>
+                <label for="filter-qualities-advantages">
+                  <span>Блок преимуществ</span>
+                  <input type="checkbox" name="advantages" id="filter-qualities-advantages">
+                </label>
+                <label for="filter-qualities-news">
+                  <span>Новости</span>
+                  <input type="checkbox" name="news" id="filter-qualities-news">
+                </label>
+                <label for="filter-qualities-gallery">
+                  <span>Галерея</span>
+                  <input type="checkbox" name="qualities" id="filter-qualities-gallery">
+                </label>
+                <label for="filter-qualities-cart">
+                  <span>Корзина</span>
+                  <input type="checkbox" name="cart" id="filter-qualities-cart">
+                </label>
+              </div>
+            </div>
+
+            <button class="btn" type="submit">Показать</button>
 
           </div>
 
           <div class="products-container">
 
-            <div class="sorting">
-            </div>
-
             <div class="result-content">
+              <p class="component">Сортировать:</p>
+              <div class="sorting-filters">
+                <p class="sorting">По цене</p>
+                <p class="sorting">По типу</p>
+                <p class="sorting">По названию</p>
+              </div>
               <article class="layout">
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img src="img/img-sedona 1.jpg" alt="Шаблон SEDONA">
+                      <img class="content-picture" src="img/img-sedona 1.jpg" weight="359" height="578"
+                        alt="Шаблон SEDONA">
                     </a>
                   </div>
                 </div>
@@ -147,7 +153,7 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img src="img/img-pink 1.jpg/359x578" alt="Шаблон PINK-1">
+                      <img class="content-picture" src="img/img-pink 1.jpg" alt="Шаблон PINK-1">
                     </a>
                   </div>
                 </div>
@@ -162,7 +168,8 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img src="img/img-barbershop 1.jpg/359x578" alt="Шаблон BARBERSHOP-1">
+                      <img class="content-picture" src="img/img-barbershop 1.jpg" weight="359" height="578"
+                        alt="Шаблон BARBERSHOP-1">
                     </a>
                   </div>
                 </div>
@@ -177,7 +184,8 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img src="img/img-mishka 1.jpg/359x578" alt="Шаблон MISHKA-1">
+                      <img class="content-picture" src="img/img-mishka 1.jpg" weight="359" height="578"
+                        alt="Шаблон MISHKA-1">
                     </a>
                   </div>
                 </div>
@@ -192,7 +200,8 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img src="img/img-aplus 1.jpg/359x578" alt="Шаблон A PLUS-1">
+                      <img class="content-picture" src="img/img-aplus 1.jpg" weight="359" height="578"
+                        alt="Шаблон A PLUS-1">
                     </a>
                   </div>
                 </div>
@@ -207,7 +216,8 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img src="img/img-kvast 1.jpg/359x578" alt="Шаблон KVAST-1">
+                      <img class="content-picture" src="img/img-kvast 1.jpg" weight="359" height="578"
+                        alt="Шаблон KVAST-1">
                     </a>
                   </div>
                 </div>
@@ -238,18 +248,20 @@
 
           </div>
 
+        </div>
     </section>
 
     <section class="map-section">
 
-      <h2 class="visually-hidden">Наши контакты:</h2>
-      <div id="map"></div>
+      <h2 class="visually-hidden">Наши контакты</h2>
+
+      <div class="contact-map">
+        <iframe class="contacts-map-google contacts-map-google--no-js"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3026917786391!2d30.322158658404696!3d59.938689995469055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjMiTiAzMMKwMTknMjMuNyJF!5e0!3m2!1sru!2sru!4v1562015705864!5m2!1sru!2sru"
+          width="1200" height="416" allowfullscreen></iframe>
+      </div>
+
       <div class="write-us">
-        <div class="contact-map">
-          <iframe class="contacts-map-google contacts-map-google--no-js"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3026917786391!2d30.322158658404696!3d59.938689995469055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjMiTiAzMMKwMTknMjMuNyJF!5e0!3m2!1sru!2sru!4v1562015705864!5m2!1sru!2sru"
-            width="1200" height="416" allowfullscreen></iframe>
-        </div>
         <h3 class="map-contact">NЁRDS DESIGN STUDIO</h3>
         <p>
           191186, Санкт-Петербург,<br>
