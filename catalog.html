@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог: Нёрдс</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,13 +17,13 @@
       <nav class="header-navigation">
 
         <a href="/" class="header-logo">
-          <img src="img/nerds-logo.svg" alt="Логотип Nerds">
+          <img src="img/header-logo-nerds.svg" alt="Логотип Nerds">
         </a>
 
         <ul class="navigation-list">
           <li class="navigation-item"><a href="blank.html">Студия</a></li>
           <li class="navigation-item"><a href="blank.html">Клиенты</a></li>
-          <li class="navigation-item"><a href="catalog.html">Магазин</a></li>
+          <li class="navigation-item current"><a href="catalog.html">Магазин</a></li>
           <li class="navigation-item"><a href="blank.html">Контакты</a></li>
 
           <li class="navigation-item">
@@ -51,76 +51,77 @@
             <p class="component">Стоимость:</p>
 
             <form class="form" action="form.php" method="GET">
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>
-
-              <div class="filters-content">
-
-                <div class="range">
-                  <label class="min-price">от<input name="min-price" type="text" class="min" value="0"></label>
-                  <label class="max-price">до<input name="max-price" type="text" class="max" value="15 000"></label>
-
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
 
+                <div class="filters-content">
+
+                  <div class="range">
+                    <label class="min-price">от<input name="min-price" type="text" class="min" value="0"></label>
+                    <label class="max-price">до<input name="max-price" type="text" class="max" value="15 000"></label>
+
+                  </div>
+
+                </div>
+
               </div>
 
-            </div>
+              <div class="web">
+                <div class="filters-header">
+                  <p class="component">Сетка:</p>
+                </div>
+                <div class="filters-content">
+                  <label for="filter-grid-adaptive">
+                    <input type="radio" name="grid" id="filter-grid-adaptive">
+                    <span>Адаптивная</span>
+                  </label>
+                  <label for="filter-grid-fixed">
+                    <input type="radio" name="grid" id="filter-grid-fixed">
+                    <span>Фиксированная</span>
+                  </label>
+                  <label for="filter-grid-fluid">
+                    <input type="radio" name="grid" id="filter-grid-fluid">
+                    <span>Резиновая</span>
+                  </label>
+                </div>
+              </div>
 
-            <div class="web">
-              <div class="filters-header">
-                <p class="component">Сетка:</p>
+              <div class="features">
+                <div class="filters-header">
+                  <p class="component">Особенности:</p>
+                </div>
+                <div class="filters-content">
+                  <label for="filter-qualities-slider">
+                    <span>Слайдер</span>
+                    <input type="checkbox" name="slider" id="filter-qualities-slider">
+                  </label>
+                  <label for="filter-qualities-advantages">
+                    <span>Блок преимуществ</span>
+                    <input type="checkbox" name="advantages" id="filter-qualities-advantages">
+                  </label>
+                  <label for="filter-qualities-news">
+                    <span>Новости</span>
+                    <input type="checkbox" name="news" id="filter-qualities-news">
+                  </label>
+                  <label for="filter-qualities-gallery">
+                    <span>Галерея</span>
+                    <input type="checkbox" name="qualities" id="filter-qualities-gallery">
+                  </label>
+                  <label for="filter-qualities-cart">
+                    <span>Корзина</span>
+                    <input type="checkbox" name="cart" id="filter-qualities-cart">
+                  </label>
+                </div>
               </div>
-              <div class="filters-content">
-                <label for="filter-grid-adaptive">
-                  <input type="radio" name="grid" id="filter-grid-adaptive">
-                  <span>Адаптивная</span>
-                </label>
-                <label for="filter-grid-fixed">
-                  <input type="radio" name="grid" id="filter-grid-fixed">
-                  <span>Фиксированная</span>
-                </label>
-                <label for="filter-grid-fluid">
-                  <input type="radio" name="grid" id="filter-grid-fluid">
-                  <span>Резиновая</span>
-                </label>
-              </div>
-            </div>
 
-            <div class="features">
-              <div class="filters-header">
-                <p class="component">Особенности:</p>
-              </div>
-              <div class="filters-content">
-                <label for="filter-qualities-slider">
-                  <span>Слайдер</span>
-                  <input type="checkbox" name="slider" id="filter-qualities-slider">
-                </label>
-                <label for="filter-qualities-advantages">
-                  <span>Блок преимуществ</span>
-                  <input type="checkbox" name="advantages" id="filter-qualities-advantages">
-                </label>
-                <label for="filter-qualities-news">
-                  <span>Новости</span>
-                  <input type="checkbox" name="news" id="filter-qualities-news">
-                </label>
-                <label for="filter-qualities-gallery">
-                  <span>Галерея</span>
-                  <input type="checkbox" name="qualities" id="filter-qualities-gallery">
-                </label>
-                <label for="filter-qualities-cart">
-                  <span>Корзина</span>
-                  <input type="checkbox" name="cart" id="filter-qualities-cart">
-                </label>
-              </div>
-            </div>
-
-            <button class="btn" type="submit">Показать</button>
+              <button class="btn" type="submit">Показать</button>
+            </form>
 
           </div>
 
@@ -137,7 +138,7 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img class="content-picture" src="img/img-sedona 1.jpg" weight="359" height="578"
+                      <img class="content-picture" src="img/pattern-sedona.jpg" weight="359" height="578"
                         alt="Шаблон SEDONA">
                     </a>
                   </div>
@@ -153,7 +154,7 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img class="content-picture" src="img/img-pink 1.jpg" alt="Шаблон PINK-1">
+                      <img class="content-picture" src="img/pattern-pink.jpg" alt="Шаблон PINK-1">
                     </a>
                   </div>
                 </div>
@@ -168,7 +169,7 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img class="content-picture" src="img/img-barbershop 1.jpg" weight="359" height="578"
+                      <img class="content-picture" src="img/pattern-barbershop.jpg" weight="359" height="578"
                         alt="Шаблон BARBERSHOP-1">
                     </a>
                   </div>
@@ -184,7 +185,7 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img class="content-picture" src="img/img-mishka 1.jpg" weight="359" height="578"
+                      <img class="content-picture" src="img/pattern-mishka.jpg" weight="359" height="578"
                         alt="Шаблон MISHKA-1">
                     </a>
                   </div>
@@ -200,7 +201,7 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img class="content-picture" src="img/img-aplus 1.jpg" weight="359" height="578"
+                      <img class="content-picture" src="img/pattern-aplus.jpg" weight="359" height="578"
                         alt="Шаблон A PLUS-1">
                     </a>
                   </div>
@@ -216,8 +217,7 @@
                 <div class="layout-top">
                   <div class="image-content">
                     <a href="#">
-                      <img class="content-picture" src="img/img-kvast 1.jpg" weight="359" height="578"
-                        alt="Шаблон KVAST-1">
+                      <img class="content-picture" src="img/pattern-kvast.jpg" weight="359" height="578" alt="Шаблон KVAST-1">
                     </a>
                   </div>
                 </div>
@@ -279,13 +279,13 @@
   <footer class="main-footer container">
     <div class="social">
       <a class="icon" href="https://vk.com/htmlacademy">
-        <img src="img/vk-icon.svg" class="circle vk" width="27" height="15" alt="Иконка vkontakte">
+        <img src="img/vk-icon.svg" class="circle vk" width="81" height="81" alt="Иконка vkontakte">
       </a>
       <a class="icon" href="https://www.facebook.com/htmlacademy">
-        <img src="img/fb-icon.svg" class="circle fb" width="12" height="22" alt="Иконка facebook">
+        <img src="img/fb-icon.svg" class="circle fb" width="81" height="81" alt="Иконка facebook">
       </a>
       <a class="icon" href="https://www.instagram.com/htmlacademy">
-        <img src="img/insta-icon.svg" class="circle insta" width="21" height="21" alt="Иконка instagram">
+        <img src="img/insta-icon.svg" class="circle insta" width="81" height="81" alt="Иконка instagram">
       </a>
     </div>
     <div class="footer-slogan">
