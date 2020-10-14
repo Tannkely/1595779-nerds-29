@@ -17,6 +17,7 @@
   --color-text: rgba(40, 49, 54, 1);
   --color-text-light: rgba(68, 68, 68, 1);
   --color-text-lighter: rgba(102, 102, 102, 1);
+  --color-grey-very-light: rgba(225, 225, 225, 1);
 }
 
 body {
@@ -105,7 +106,7 @@ body {
   border-bottom: 2px solid transparent;
 }
 
-.header-navigation li .current {
+.header-navigation li.current {
   border-color: var(--color-red);
 }
 
@@ -199,7 +200,7 @@ body {
 
 .services .button {
   margin-top: 25px;
-  padding: 10px 0 10px 0;
+  padding: 10px 10px 10px 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -394,27 +395,32 @@ body {
   margin-right: 10px;
 }
 
+.social .icon {
+  display: inline-block;
+  background-color: var(--color-grey-very-light);
+}
+
 .social .icon img {
   max-width: 26px;
   max-height: 22px;
   width: auto;
   height: auto;
-  display: inline-block; 
+  display: inline-block;
 }
 
-.social .icon: hover {
+.social .icon:hover {
   background-color: var(--color-grey);
-  display: inline-block; 
+  display: inline-block;
 }
 
-.social .icon: active {
+.social .icon:active {
   background-color: var(--color-grey);
-  display: inline-block; 
+  display: inline-block;
 }
 
-.social .icon: active img {
+.social .icon:active img {
   opacity: 0.3;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .footer-slogan b {
@@ -439,6 +445,7 @@ body {
   font-size: 55px;
   font-weight: 500;
   line-height: 100%;
+  margin: 0px;
 }
 
 .btn {
@@ -451,6 +458,13 @@ body {
   line-height: 18px;
   text-decoration: none;
   display: inline-block;
+}
+
+.button-grey {
+  background-color: var(--color-grey);
+  color: var(--color-black);
+  display: inline-block;
+  font-family: inherit
 }
 
 .component {
@@ -512,7 +526,8 @@ body {
   left: 0;
   align-items: center;
   background: var(--color-grey);
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .layout-menu p {
