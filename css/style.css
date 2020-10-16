@@ -409,12 +409,12 @@ body {
 }
 
 .social .icon:hover {
-  background-color: var(--color-grey);
+  background-color: var(--color-red-dark);
   display: inline-block;
 }
 
 .social .icon:active {
-  background-color: var(--color-grey);
+  background-color: var(--color-red-darker);
   display: inline-block;
 }
 
