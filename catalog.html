@@ -44,193 +44,185 @@
 
     <section class="products-section container">
 
-      <div class="content">
-        <div class="content-wrapper container">
-          <div class="filters">
+      <div class="filters">
 
-            <p class="component">Стоимость:</p>
+        <p class="component">Стоимость:</p>
 
-            <form class="form" action="form.php" method="GET">
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
-                </div>
+        <form class="form" action="form.php" method="GET">
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
 
-                <div class="filters-content">
+            <div class="filters-content">
 
-                  <div class="range">
-                    <label class="min-price">от<input name="min-price" type="text" class="min" value="0"></label>
-                    <label class="max-price">до<input name="max-price" type="text" class="max" value="15 000"></label>
-
-                  </div>
-
-                </div>
+              <div class="range">
+                <label class="min-price">от<input name="min-price" type="text" class="min" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="text" class="max" value="15 000"></label>
 
               </div>
 
-              <div class="web">
-                <div class="filters-header">
-                  <p class="component">Сетка:</p>
-                </div>
-                <div class="filters-content">
-                  <label for="filter-grid-adaptive">
-                    <input type="radio" name="grid" id="filter-grid-adaptive">
-                    <span>Адаптивная</span>
-                  </label>
-                  <label for="filter-grid-fixed">
-                    <input type="radio" name="grid" id="filter-grid-fixed">
-                    <span>Фиксированная</span>
-                  </label>
-                  <label for="filter-grid-fluid">
-                    <input type="radio" name="grid" id="filter-grid-fluid">
-                    <span>Резиновая</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="features">
-                <div class="filters-header">
-                  <p class="component">Особенности:</p>
-                </div>
-                <div class="filters-content">
-                  <label for="filter-qualities-slider">
-                    <span>Слайдер</span>
-                    <input type="checkbox" name="slider" id="filter-qualities-slider">
-                  </label>
-                  <label for="filter-qualities-advantages">
-                    <span>Блок преимуществ</span>
-                    <input type="checkbox" name="advantages" id="filter-qualities-advantages">
-                  </label>
-                  <label for="filter-qualities-news">
-                    <span>Новости</span>
-                    <input type="checkbox" name="news" id="filter-qualities-news">
-                  </label>
-                  <label for="filter-qualities-gallery">
-                    <span>Галерея</span>
-                    <input type="checkbox" name="qualities" id="filter-qualities-gallery">
-                  </label>
-                  <label for="filter-qualities-cart">
-                    <span>Корзина</span>
-                    <input type="checkbox" name="cart" id="filter-qualities-cart">
-                  </label>
-                </div>
-              </div>
-
-              <button class="button button-grey" type="button">Показать</button>
-            </form>
+            </div>
 
           </div>
-          <div class="catalog-wrapper container">
-            <div class="result-content">
-              <p class="component">Сортировать:</p>
-              <div class="sorting-filters">
-                <a href="#" class="sorting">По цене</a>
-                <a href="#" class="sorting">По типу</a>
-                <a href="#" class="sorting">По названию</a>
-                <a href="#" aria-label="Сортировать по убыванию" class="sorting">&#9660;</a>
-                <a href="#" aria-label="Сортировать по возрастанию" class="sorting">&#9650;</a>
-              </div>
+
+          <div class="web">
+            <div class="filters-header">
+              <p class="component">Сетка:</p>
             </div>
-
-            <div class="products-container">
-
-              <article class="layout">
-                <a class="layout-image">
-                  <img class="content-picture" src="img/pattern-sedona.jpg" width="359" height="578"
-                    alt="Шаблон SEDONA">
-                </a>
-                <div class="layout-menu">
-                  <h2>Sedona</h2>
-                  <p>Информационный сайт для туристов</p>
-                  <a href="#" class="button">9 900 ₽</a>
-                </div>
-              </article>
-
-
-              <article class="layout">
-                <a class="layout-image">
-                  <img class="content-picture" src="img/pattern-pink.jpg" alt="Шаблон PINK-1">
-                </a>
-                <div class="layout-menu">
-                  <h2>Pink APP</h2>
-                  <p>Продуктовый лендинг приложения для IOS и Android</p>
-                  <a href="#" class="button">9 900 ₽</a>
-                </div>
-              </article>
-
-              <article class="layout">
-                <a class="layout-image">
-                  <img class="content-picture" src="img/pattern-barbershop.jpg" width="359" height="578"
-                    alt="Шаблон BARBERSHOP-1">
-                </a>
-                <div class="layout-menu">
-                  <h2>Barbershop</h2>
-                  <p>Сайт салона красоты. Для мужчин, да.</p>
-                  <a href="#" class="button">9 900 ₽</a>
-                </div>
-              </article>
-
-              <article class="layout">
-                <a class="layout-image">
-                  <img class="content-picture" src="img/pattern-mishka.jpg" width="359" height="578"
-                    alt="Шаблон MISHKA-1">
-                </a>
-                <div class="layout-menu">
-                  <h2>Mishka</h2>
-                  <p>Интернет-магазин вязанных игрушек</p>
-                  <a href="#" class="button">9 900 ₽</a>
-                </div>
-              </article>
-
-              <article class="layout">
-                <a class="layout-image">
-                  <img class="content-picture" src="img/pattern-aplus.jpg" width="359" height="578"
-                    alt="Шаблон A PLUS-1">
-                </a>
-                <div class="layout-menu">
-                  <h2>A Plus</h2>
-                  <p>Лендинг курсов повышения квалификации</p>
-                  <a href="#" class="button">9 900 ₽</a>
-                </div>
-              </article>
-
-              <article class="layout">
-                <a class="layout-image">
-                  <img class="content-picture" src="img/pattern-kvast.jpg" width="359" height="578"
-                    alt="Шаблон KVAST-1">
-                </a>
-                <div class="layout-menu">
-                  <h2>Kvast</h2>
-                  <p>Промо-сайт производителя крафтового кваса</p>
-                  <a href="#" class="button">9 900 ₽</a>
-                </div>
-              </article>
+            <div class="filters-content">
+              <label for="filter-grid-adaptive">
+                <input type="radio" name="grid" id="filter-grid-adaptive">
+                <span>Адаптивная</span>
+              </label>
+              <label for="filter-grid-fixed">
+                <input type="radio" name="grid" id="filter-grid-fixed">
+                <span>Фиксированная</span>
+              </label>
+              <label for="filter-grid-fluid">
+                <input type="radio" name="grid" id="filter-grid-fluid">
+                <span>Резиновая</span>
+              </label>
             </div>
+          </div>
 
-            <div class="pagination">
-              <ul>
-                <li>
-                  <a>1</a>
-                </li>
-                <li>
-                  <a href="#">2</a>
-                </li>
-                <li>
-                  <a href="#">3</a>
-                </li>
-                <li>
-                  <a href="#next">Следующая</a>
-                </li>
-              </ul>
+          <div class="features">
+            <div class="filters-header">
+              <p class="component">Особенности:</p>
             </div>
+            <div class="filters-content">
+              <label for="filter-qualities-slider">
+                <span>Слайдер</span>
+                <input type="checkbox" name="slider" id="filter-qualities-slider">
+              </label>
+              <label for="filter-qualities-advantages">
+                <span>Блок преимуществ</span>
+                <input type="checkbox" name="advantages" id="filter-qualities-advantages">
+              </label>
+              <label for="filter-qualities-news">
+                <span>Новости</span>
+                <input type="checkbox" name="news" id="filter-qualities-news">
+              </label>
+              <label for="filter-qualities-gallery">
+                <span>Галерея</span>
+                <input type="checkbox" name="qualities" id="filter-qualities-gallery">
+              </label>
+              <label for="filter-qualities-cart">
+                <span>Корзина</span>
+                <input type="checkbox" name="cart" id="filter-qualities-cart">
+              </label>
+            </div>
+          </div>
+
+          <button class="button button-grey" type="button">Показать</button>
+        </form>
+
+      </div>
+      <div class="catalog-wrapper">
+        <div class="result-content">
+          <p class="component">Сортировать:</p>
+          <div class="sorting-filters">
+            <a href="#" class="sorting">По цене</a>
+            <a href="#" class="sorting">По типу</a>
+            <a href="#" class="sorting">По названию</a>
+            <a href="#" aria-label="Сортировать по убыванию" class="sorting">&#9660;</a>
+            <a href="#" aria-label="Сортировать по возрастанию" class="sorting">&#9650;</a>
           </div>
         </div>
 
+        <div class="products-container">
+
+          <article class="layout">
+            <a class="layout-image">
+              <img class="content-picture" src="img/pattern-sedona.jpg" width="359" height="578" alt="Шаблон SEDONA">
+            </a>
+            <div class="layout-menu">
+              <h2>Sedona</h2>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" class="button">9 900 ₽</a>
+            </div>
+          </article>
+
+
+          <article class="layout">
+            <a class="layout-image">
+              <img class="content-picture" src="img/pattern-pink.jpg" alt="Шаблон PINK-1">
+            </a>
+            <div class="layout-menu">
+              <h2>Pink APP</h2>
+              <p>Продуктовый лендинг приложения для IOS и Android</p>
+              <a href="#" class="button">9 900 ₽</a>
+            </div>
+          </article>
+
+          <article class="layout">
+            <a class="layout-image">
+              <img class="content-picture" src="img/pattern-barbershop.jpg" width="359" height="578"
+                alt="Шаблон BARBERSHOP-1">
+            </a>
+            <div class="layout-menu">
+              <h2>Barbershop</h2>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <a href="#" class="button">9 900 ₽</a>
+            </div>
+          </article>
+
+          <article class="layout">
+            <a class="layout-image">
+              <img class="content-picture" src="img/pattern-mishka.jpg" width="359" height="578" alt="Шаблон MISHKA-1">
+            </a>
+            <div class="layout-menu">
+              <h2>Mishka</h2>
+              <p>Интернет-магазин вязанных игрушек</p>
+              <a href="#" class="button">9 900 ₽</a>
+            </div>
+          </article>
+
+          <article class="layout">
+            <a class="layout-image">
+              <img class="content-picture" src="img/pattern-aplus.jpg" width="359" height="578" alt="Шаблон A PLUS-1">
+            </a>
+            <div class="layout-menu">
+              <h2>A Plus</h2>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a href="#" class="button">9 900 ₽</a>
+            </div>
+          </article>
+
+          <article class="layout">
+            <a class="layout-image">
+              <img class="content-picture" src="img/pattern-kvast.jpg" width="359" height="578" alt="Шаблон KVAST-1">
+            </a>
+            <div class="layout-menu">
+              <h2>Kvast</h2>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a href="#" class="button">9 900 ₽</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="pagination">
+          <ul>
+            <li>
+              <a>1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#next">Следующая</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
 
     </section>
 
