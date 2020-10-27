@@ -92,6 +92,7 @@ body {
   padding-top: 50px;
   color: var(--color-black);
   background-color: var(--color-grey);
+
 }
 
 .header-logo img {
@@ -101,6 +102,16 @@ body {
 
 .header-navigation {
   background-color: var(--color-grey);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 200px;
+  /* display: flex; 
+  justify-content: space-between;
+  align-items: center; */
+  padding-bottom: 9px;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase; 
 }
 
 .header-navigation ul {
@@ -142,6 +153,10 @@ body {
   margin-top: 26px;
   padding-left: 0;
   color: var(--color-black);
+  width: 437px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .navigation-item {
@@ -156,6 +171,10 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
+}
+
+.basket {
+  max-width: 75px;
 }
 
 /* SLIDER */
@@ -194,6 +213,17 @@ body {
   height: 10px;
   margin-left: -100px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider-control {
+ width: 18px;
+ height: 18px;
+ border-radius: 50%;
+ border: none;
+ background-color: var(--color-white);
+ display: block;
+ margin-right: 17px; 
 }
 
 /* SERVICES */
@@ -245,6 +275,8 @@ body {
 .about-us.container {
   padding-top: 50px;
   padding-bottom: 50px;
+  display: flex;
+
 }
 
 .information.container {
@@ -300,6 +332,7 @@ body {
 .partners-logos {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .index-informations {
