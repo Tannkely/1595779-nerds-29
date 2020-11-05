@@ -47,7 +47,7 @@
 
       <div class="filters">
 
-        <p class="component">Стоимость:</p>
+        <p class="component component-pay">Стоимость:</p>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="GET" target="_blank">
 
@@ -78,7 +78,7 @@
             <div class="filters-content">
               <ul>
                 <li>
-                  <input class="radio-input visually-hidden" type="radio" name="grid" id="adaptive">
+                  <input class="radio-input visually-hidden" type="radio" name="grid" id="adaptive" checked>
                   <label class="option" for="adaptive">Адаптивная</label>
                 </li>
                 <li>
@@ -98,23 +98,23 @@
               <ul>
                 <li>
                   <input class="check-input visually-hidden" type="checkbox" name="slider" id="checkbox-slider" checked>
-                  <label class="option" for="filter-qualities-slider">Cлайдер</label>
+                  <label class="option" for="checkbox-slider">Cлайдер</label>
                 </li>
                 <li>
                   <input class="check-input visually-hidden" type="checkbox" name="advantages" id="checkbox-advantages">
-                  <label class="option" for="filter-qualities-advantages">Блок преимуществ</label>
+                  <label class="option" for="checkbox-advantages">Блок преимуществ</label>
                 </li>
                 <li>
                   <input class="check-input visually-hidden" type="checkbox" name="news" id="checkbox-news" checked>
-                  <label class="option" for="filter-qualities-news">Новости</label>
+                  <label class="option" for="checkbox-news">Новости</label>
                 </li>
                 <li>
                   <input class="check-input visually-hidden" type="checkbox" name="gallery" id="checkbox-gallery">
-                  <label class="option" for="filter-qualities-gallery">Галерея</label>
+                  <label class="option" for="checkbox-gallery">Галерея</label>
                 </li>
                 <li>
                   <input class="check-input visually-hidden" type="checkbox" name="cart" id="checkbox-cart">
-                  <label class="option" for="filter-qualities-cart">Корзина</label>
+                  <label class="option" for="checkbox-cart">Корзина</label>
                 </li>
               </ul>
             </div>
@@ -159,7 +159,7 @@
             <div class="layout-menu">
               <h2>Sedona</h2>
               <p>Информационный сайт<br>для туристов</p>
-              <a href="#" class="button">9 900 ₽</a>
+              <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
 
@@ -172,7 +172,7 @@
             <div class="layout-menu">
               <h2>Pink APP</h2>
               <p>Продуктовый лендинг<br>приложения для IOS и Android</p>
-              <a href="#" class="button">9 900 ₽</a>
+              <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
 
@@ -185,7 +185,7 @@
             <div class="layout-menu">
               <h2>Barbershop</h2>
               <p>Сайт салона красоты.<br>Для мужчин, да.</p>
-              <a href="#" class="button">9 900 ₽</a>
+              <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
 
@@ -197,7 +197,7 @@
             <div class="layout-menu">
               <h2>Mishka</h2>
               <p>Интернет-магазин<br>вязанных игрушек</p>
-              <a href="#" class="button">9 900 ₽</a>
+              <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
 
@@ -209,7 +209,7 @@
             <div class="layout-menu">
               <h2>A Plus</h2>
               <p>Лендинг курсов повышения<br>квалификации</p>
-              <a href="#" class="button">9 900 ₽</a>
+              <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
 
@@ -221,27 +221,26 @@
             <div class="layout-menu">
               <h2>Kvast</h2>
               <p>Промо-сайт производителя<br>крафтового кваса</p>
-              <a href="#" class="button">9 900 ₽</a>
+              <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
         </div>
 
-        <div class="pagination">
-          <ul> 
-            <li>
-              <a>1</a>
+
+          <ul class="pagination"> 
+            <li class="pagination-list pagination-list-current">
+              <a class="pagination-button button-current">1</a>
             </li>
-            <li>
-              <a href="#">2</a>
+            <li class="pagination-list">
+              <a class="pagination-button" href="#">2</a>
             </li>
-            <li>
-              <a href="#">3</a>
+            <li class="pagination-list">
+              <a class="pagination-button" href="#">3</a>
             </li>
-            <li>
-              <a href="#next">Следующая</a>
+            <li class="pagination-list">
+              <a class="pagination-button pagination-button-next" href="#next">Следующая</a>
             </li>
           </ul>
-        </div>
       </div>
 
 
