@@ -16,7 +16,7 @@
     <div class="container">
       <nav class="header-navigation">
 
-        <a href="/" class="header-logo">
+        <a href="index.html" class="header-logo">
           <img src="img/header-logo-nerds.svg" alt="Логотип Nerds">
         </a>
 
@@ -27,9 +27,9 @@
           <li class="navigation-item"><a href="blank.html">Контакты</a></li>
         </ul>
 
-        <ul class="navigation-basket">
-          <li class="navigation-item">
-            <a class="basket" href="blank.html">Корзина</a>
+        <ul class="navigation-list navigation-list-basket">
+          <li class="navigation-item icon-basket">
+            <a href="blank.html">Корзина</a>
           </li>
         </ul>
 
@@ -139,14 +139,15 @@
             </li>
           </ul>
 
-          <ul class="sorting-switch">
-            <li class="switch current">
-              <a href="#" aria-label="Сортировать по убыванию" class="sorting-down"></a>
+          <ul class="switch">
+            <li class="sorting-switch sorting-switch-down current">
+              <a href="#" aria-label="Сортировать по убыванию"></a>
             </li>
-            <li class="switch">
-              <a href="#" aria-label="Сортировать по возрастанию" class="sorting-up"></a>
+            <li class="sorting-switch sorting-switch-up">
+              <a href="#" aria-label="Сортировать по возрастанию"></a>
             </li>
           </ul>
+
         </div>
 
         <div class="products-container">
@@ -167,7 +168,7 @@
           <article class="layout">
             <div class="decoration-circle"></div>
             <a class="layout-image">
-              <img class="content-picture" src="img/pattern-pink.jpg" width="359" height="578"alt="Шаблон PINK-1">
+              <img class="content-picture" src="img/pattern-pink.jpg" width="359" height="578" alt="Шаблон PINK-1">
             </a>
             <div class="layout-menu">
               <h2>Pink APP</h2>
@@ -227,20 +228,20 @@
         </div>
 
 
-          <ul class="pagination"> 
-            <li class="pagination-list pagination-list-current">
-              <a class="pagination-button button-current">1</a>
-            </li>
-            <li class="pagination-list">
-              <a class="pagination-button" href="#">2</a>
-            </li>
-            <li class="pagination-list">
-              <a class="pagination-button" href="#">3</a>
-            </li>
-            <li class="pagination-list">
-              <a class="pagination-button pagination-button-next" href="#next">Следующая</a>
-            </li>
-          </ul>
+        <ul class="pagination">
+          <li class="pagination-list pagination-list-current">
+            <a class="pagination-button button-current">1</a>
+          </li>
+          <li class="pagination-list">
+            <a class="pagination-button" href="#">2</a>
+          </li>
+          <li class="pagination-list">
+            <a class="pagination-button" href="#">3</a>
+          </li>
+          <li class="pagination-list">
+            <a class="pagination-button pagination-button-next" href="#next">Следующая</a>
+          </li>
+        </ul>
       </div>
 
 
@@ -266,7 +267,7 @@
         <p>
           <a href="tel:+78122757575" class="tel">тел. +7 (812) 275-75-75</a>
         </p>
-        <a href="form.html" class="button button-contacts">Напишите нам</a>
+        <a href="form.html" id="btn-contact-modal" class="button button-contacts">Напишите нам</a>
       </div>
 
     </section>
@@ -289,6 +290,30 @@
       <p class="sub-heading">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
+
+  <section id="contact-modal" class="modal-window">
+
+    <h2 class="visually-hidden">Форма для отправки контактов</h2>
+    <form class="modal-window-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <legend>Напишите нам</legend>
+        <label class="name">Ваше имя: <br>
+          <input class="name-user" type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label class="email">Ваш email: <br>
+          <input class="email-user" type="email" name="email" placeholder="email@example.com">
+        </label>
+        <label class="text">Текст письма: <br>
+          <textarea name="text" rows="6" placeholder="В свободной форме"></textarea>
+        </label>
+      </fieldset>
+      <button class="button button-modal-window" type="submit" aria-label="Отправить форму">Отправить</button>
+    </form>
+    <button id="btn-close-modal" class="modal-window-close" type="button" aria-label="Закрыть"></button>
+
+  </section>
+
+  <script src="js/script.js"></script>
 
 </body>
 

@@ -17,7 +17,7 @@
       <nav class="header-navigation">
 
 
-        <a href="/" class="header-logo">
+        <a href="index.html" class="header-logo">
           <img src="img/header-logo-nerds.svg" alt="Логотип Nerds">
         </a>
 
@@ -27,9 +27,9 @@
           <li class="navigation-item"><a href="catalog.html">Магазин</a></li>
           <li class="navigation-item"><a href="blank.html">Контакты</a></li>
         </ul>
-        <ul class="navigation-basket">
-          <li class="navigation-item">
-            <a class="basket" href="blank.html">Корзина</a>
+        <ul class="navigation-list navigation-list-basket">
+          <li class="navigation-item icon-basket">
+            <a href="blank.html">Корзина</a>
           </li>
         </ul>
 
@@ -49,7 +49,7 @@
 
         <div class="slides">
 
-          <div class="slide flying-phones-slide slide-current">
+          <div class="slide flying-phones-slide slide-current slide-one">
             <div class="slide-text">
               <h2 class="slide-title">Долго, дорого,<br>скрупулезно.</h2>
               <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
@@ -213,7 +213,8 @@
         <p>
           <a href="tel:+78122757575" class="tel">тел. +7 (812) 275-75-75</a>
         </p>
-        <a href="form.html" class="button button-contacts">Напишите нам</a>
+        <a href="form.html" id="btn-contact-modal" class="button button-contacts">Напишите нам</a>
+
       </div>
 
     </section>
@@ -237,7 +238,7 @@
     </div>
   </footer>
 
-  <section class="modal-window">
+  <section id="contact-modal" class="modal-window">
 
     <h2 class="visually-hidden">Форма для отправки контактов</h2>
     <form class="modal-window-form" action="https://echo.htmlacademy.ru" method="post">
@@ -253,12 +254,14 @@
           <textarea name="text" rows="6" placeholder="В свободной форме"></textarea>
         </label>
       </fieldset>
-      <button class="button button-modal" type="submit" aria-label="Отправить форму">Отправить</button>
+      <button class="button button-modal-window" type="submit" aria-label="Отправить форму">Отправить</button>
     </form>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <button class="modal-window-close" id="btn-close-modal" type="button" aria-label="Закрыть"></button>
 
   </section>
+
   <script src="js/script.js"></script>
+
 </body>
 
 </html>
