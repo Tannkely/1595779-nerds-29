@@ -1294,12 +1294,13 @@ iframe {
   line-height: 18px;
 }
 
-.layout-menu h2 {
+.layout-menu .template-name {
   margin: 0 0 15px;
   text-transform: uppercase;
   color: var(--color-black);
   font-size: 18px;
   line-height: 30px;
+  text-decoration: none;
 }
 
 .button-pay {
