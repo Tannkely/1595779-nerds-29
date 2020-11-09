@@ -78,6 +78,7 @@ body {
   background-color: var(--color-red);
   font-size: 16px;
   line-height: 18px;
+  font-family: inherit;
 }
 
 .button-read-more {
@@ -225,15 +226,12 @@ body {
   margin-right: 0;
 }
 
-.navigation-item.icon-basket::before {
-  position: absolute;
-  top: 50%;
-  right: 100px;
-  display: block;
+.navigation-item.icon-basket a::before {
+  padding-right: 40px;
+  display: inline;
   width: 15px;
   height: 15px;
   content: "";
-  transform: translateY(-50%);
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -282,7 +280,7 @@ body {
 
 .slide-title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 38px;
   color: var(--color-black);
   font-size: 55px;
   font-weight: 500;
@@ -290,15 +288,15 @@ body {
 }
 
 .slide-text {
-  padding: 20px 0;
+  padding-top: 8px;
+  padding-bottom: 27px;
   color: var(--color-text);
-
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
 .slide-text p {
-  margin: 0 0 40px;
+  margin: 0 0 27px;
 }
 
 .slide-current {
@@ -308,8 +306,8 @@ body {
 .slider-controls {
   position: absolute;
   z-index: 3;
-  bottom: 95px;
-  left: 50%;
+  bottom: 67px;
+  left: 50.5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -320,6 +318,7 @@ body {
 }
 
 .slider-control {
+  position: relative;
   display: block;
   width: 18px;
   height: 18px;
@@ -339,7 +338,7 @@ body {
 .slider-control-active:after {
   position: absolute;
   bottom: 5px;
-  left: 54px;
+  left: 5px;
   width: 4px;
   height: 4px;
   content: "";
@@ -379,7 +378,7 @@ body {
   margin-right: auto;
   margin-bottom: 40px;
   margin-left: auto;
-  padding-top: 88px;
+  padding-top: 92px;
 }
 
 .services-info-list {
@@ -400,7 +399,7 @@ body {
 }
 
 .services .button {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .about-us.container {
@@ -464,26 +463,48 @@ body {
   font-size: 16px;
 }
 
+/* Partners logos */
+
 .partners-logos {
+  width: 1160px;
   display: flex;
   align-items: center;
+  height: 180px;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px auto 80px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 80px;
   border-top: 2px solid var(--color-grey-very-light);
   border-bottom: 2px solid var(--color-grey-very-light);
 }
 
+.partner-logo{
+  display: flex;
+  justify-content: center;
+  width: 23%;
+  position: relative;
+}
+
+.partner-logo:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 2px;
+  height: 50px;
+  transform: translateY(-50%);
+  background-color: var(--color-grey-very-light);
+}
+
 .partners-link {
+  display: block;
   position: relative;
   justify-content: center;
-  width: 25%;
   text-align: center;
 }
 
-.partners-link:not(:last-child)::after {
+/* .partners-link:not(:last-child)::after {
   position: absolute;
   top: 50%;
   right: 0;
@@ -492,10 +513,14 @@ body {
   content: "";
   transform: translateY(-50%);
   background-color: var(--color-grey-very-light);
-}
+  background-color: red;
+} */
 
 .partners-link img {
   opacity: 0.3;
+  object-fit: scale-down;
+  height: 100%;
+  object-position: bottom;
 }
 
 .partners-link:hover img {
@@ -508,8 +533,7 @@ body {
 
 .index-informations {
   display: grid;
-  margin-bottom: 29px;
-
+  margin-bottom: 26px;
   grid-template-columns: 1fr 360px;
 }
 
@@ -530,7 +554,7 @@ body {
 
 .features {
   display: grid;
-  margin: 48px 0 47px;
+  margin: 40px 0 47px;
   padding: 0;
   list-style: none;
 
@@ -656,14 +680,14 @@ iframe {
 
 .main-footer {
   display: grid;
-  padding: 60px 0;
-
+  padding: 62px 0;
   grid-template-columns: 263px 1fr;
   column-gap: 139px;
 }
 
 .main-footer .social {
   justify-content: space-between;
+  margin-top: 
 }
 
 .main-footer .container {
@@ -735,17 +759,27 @@ iframe {
   opacity: 0.3;
 }
 
+.footer-slogan {
+  position: relative;
+}
+
 .footer-slogan b {
   align-items: center;
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
+  position: absolute;
+  top: 31%;                         
+  transform: translate(0, -50%);
 }
 
 .footer-slogan p {
   color: var(--color-text-light);
   font-size: 16px;
   line-height: 22px;
+  position: absolute;
+  top: 60%;                         
+  transform: translate(0, -50%);
 }
 
 /* /* Сatalog * */
@@ -785,6 +819,7 @@ iframe {
   background-color: var(--color-grey);
   font-family: inherit;
   font-weight: bold;
+  outline: none;
 }
 
 .button-grey:hover {
@@ -811,7 +846,7 @@ iframe {
 }
 
 .component-pay {
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
 
 .option {
@@ -864,7 +899,7 @@ iframe {
 
 .products-section {
   display: grid;
-  margin: 54px auto 60px;
+  margin: 56px auto 60px;
 
   grid-template-columns: 260px auto;
   grid-gap: 140px;
@@ -1045,7 +1080,7 @@ iframe {
 }
 
 .range-filter {
-  margin-bottom: 50px;
+  margin-bottom: 54px;
 }
 
 .range-controls .scale {
@@ -1289,7 +1324,7 @@ iframe {
 }
 
 .layout-menu p {
-  margin: 0 0 33px;
+  margin: 0;
   color: var(--color-text-lighter);
   line-height: 18px;
 }
@@ -1304,6 +1339,7 @@ iframe {
 }
 
 .button-pay {
+  margin-top: 30px;
   box-sizing: border-box;
   min-width: 200px;
 }
@@ -1394,8 +1430,9 @@ iframe {
 .modal-window {
   position: fixed;
   z-index: 20;
-  bottom: 180px;
-  left: 25%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
   display: none;
   width: 960px;
   height: 590px;
@@ -1438,7 +1475,7 @@ iframe {
 }
 
 .modal-window-form label {
-  margin-bottom: 34px;
+  display: block;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
@@ -1453,6 +1490,7 @@ iframe {
   border-radius: 3px;
   outline: none;
   background: var(--color-white);
+
 }
 
 .modal-window-form input {
@@ -1466,6 +1504,8 @@ iframe {
   height: 118px;
   padding: 16px 16px;
   resize: none;
+  font-size: 100%;
+  font-family: sans-serif;
 }
 
 .modal-window-form input:hover,
@@ -1522,4 +1562,46 @@ iframe {
 .modal-window-close:active {
   opacity: 0.1;
   outline: none;
+}
+
+/* Animations */
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

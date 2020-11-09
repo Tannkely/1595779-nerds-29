@@ -89,6 +89,7 @@
                   <input class="radio-input visually-hidden" type="radio" name="grid" id="fluid">
                   <label class="option" for="fluid">Резиновая</label>
                 </li>
+              </ul>
             </div>
           </div>
 
@@ -120,7 +121,7 @@
             </div>
           </div>
 
-          <button class="button button-grey" type="button">Показать</button>
+          <button class="button button-grey" type="submit">Показать</button>
         </form>
 
       </div>
@@ -161,7 +162,8 @@
               <h2 class="layout-title">
                 <a href="/" class="template-name">Sedona</a>
               </h2>
-              <p>Информационный сайт<br>для туристов</p>
+              <p>Информационный сайт</p>
+              <p>для туристов</p>
               <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
@@ -176,7 +178,8 @@
               <h2 class="layout-title">
                 <a href="/" class="template-name">Pink APP</a>
               </h2>
-              <p>Продуктовый лендинг<br>приложения для IOS и Android</p>
+              <p>Продуктовый лендинг</p>
+              <p>приложения для IOS и Android</p>
               <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
@@ -191,7 +194,8 @@
               <h2 class="layout-title">
                 <a href="/" class="template-name">Barbershop</a>
               </h2>
-              <p>Сайт салона красоты.<br>Для мужчин, да.</p>
+              <p>Сайт салона красоты.</p>
+              <p>Для мужчин, да.</p>
               <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
@@ -205,7 +209,8 @@
               <h2 class="layout-title">
                 <a href="/" class="template-name">Mishka</a>
               </h2>
-              <p>Интернет-магазин<br>вязанных игрушек</p>
+              <p>Интернет-магазин</p>
+              <p>вязанных игрушек</p>
               <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
@@ -219,7 +224,8 @@
               <h2 class="layout-title">
                 <a href="/" class="template-name">A Plus</a>
               </h2>
-              <p>Лендинг курсов повышения<br>квалификации</p>
+              <p>Лендинг курсов повышения</p>
+              <p>квалификации</p>
               <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
@@ -233,7 +239,8 @@
               <h2 class="layout-title">
                 <a href="/" class="template-name">Kvast</a>
               </h2>
-              <p>Промо-сайт производителя<br>крафтового кваса</p>
+              <p>Промо-сайт производителя</p>
+              <p>крафтового кваса</p>
               <a href="#" class="button button-pay">9 900 ₽</a>
             </div>
           </article>
@@ -309,15 +316,22 @@
     <form class="modal-window-form" action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend>Напишите нам</legend>
-        <label class="name">Ваше имя: <br>
-          <input class="name-user" type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label class="email">Ваш email: <br>
-          <input class="email-user" type="email" name="email" placeholder="email@example.com">
-        </label>
-        <label class="text">Текст письма: <br>
-          <textarea name="text" rows="6" placeholder="В свободной форме"></textarea>
-        </label>
+
+        <p>
+          <label class="name" for="text">Ваше имя:</label>
+            <input class="name-user" id="text" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+
+        <p>
+          <label class="email" for="text">Ваш email:</label>
+            <input class="email-user" id="text" type="email" name="email" placeholder="email@example.com">
+        </p>
+
+        <p>
+          <label class="text" for="text">Текст письма:</label>
+            <textarea name="text" id="text" rows="6" placeholder="В свободной форме"></textarea>
+        </p>
+
       </fieldset>
       <button class="button button-modal-window" type="submit" aria-label="Отправить форму">Отправить</button>
     </form>
