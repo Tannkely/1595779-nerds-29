@@ -79,6 +79,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-family: inherit;
+  vertical-align: top;
 }
 
 .button-read-more {
@@ -86,6 +87,7 @@ body {
   padding-right: 55px;
   padding-left: 55px;
   background-color: var(--color-red);
+  vertical-align: top;
 }
 
 .button-read-more:hover {
@@ -100,6 +102,7 @@ body {
 .button-red {
   display: inline-block;
   background-color: var(--color-red);
+  vertical-align: top;
 }
 
 .button-red:hover {
@@ -114,6 +117,7 @@ body {
 .button-yellow {
   display: inline-block;
   background-color: var(--color-yellow);
+  vertical-align: top;
 }
 
 .button-yellow:hover {
@@ -128,6 +132,7 @@ body {
 .button-green {
   display: inline-block;
   background-color: var(--color-green);
+  vertical-align: top;
 }
 
 .button-green:hover {
@@ -220,6 +225,7 @@ body {
   position: relative;
   display: inline-block;
   margin-right: 45px;
+  vertical-align: top;
 }
 
 .navigation-item:last-child {
@@ -735,6 +741,7 @@ iframe {
   max-width: 26px;
   height: auto;
   max-height: 22px;
+  vertical-align: top;
 }
 
 .social .icon:hover {
@@ -808,6 +815,7 @@ iframe {
   background-color: var(--color-grey);
   font-size: 16px;
   line-height: 18px;
+  vertical-align: top;
 }
 
 .button-grey {
@@ -819,6 +827,7 @@ iframe {
   font-family: inherit;
   font-weight: bold;
   outline: none;
+  vertical-align: top;
 }
 
 .button-grey:hover {
@@ -1568,6 +1577,10 @@ iframe {
 .modal-window-close:active {
   opacity: 0.1;
   outline: none;
+}
+
+.fieldset-label {
+  margin-bottom: 40px;
 }
 
 /* Animations */

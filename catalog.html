@@ -17,7 +17,7 @@
       <nav class="header-navigation">
 
         <a href="index.html" class="header-logo">
-          <img src="img/header-logo-nerds.svg" alt="Логотип Nerds">
+          <img src="img/header-logo-nerds.svg" width="160" height="65" alt="Логотип Nerds">
         </a>
 
         <ul class="navigation-list">
@@ -311,20 +311,20 @@
       <fieldset>
         <legend>Напишите нам</legend>
 
-        <p>
-          <label class="name" for="text">Ваше имя:</label>
-            <input class="name-user" id="text" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
+        <div class="fieldset-label">
+          <label class="label" for="text">Ваше имя:</label>
+          <input class="name-user" id="text" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
 
-        <p>
-          <label class="email" for="email-field">Ваш email:</label>
-            <input class="email-user" id="email-field" type="email" name="email" placeholder="email@example.com">
-        </p>
+        <div class="fieldset-label">
+          <label class="label" for="email-field">Ваш email:</label>
+          <input class="email-user" id="email-field" type="email" name="email" placeholder="email@example.com">
+        </div>
 
-        <p>
-          <label class="text" for="text">Текст письма:</label>
-            <textarea name="text" id="text" rows="6" placeholder="В свободной форме"></textarea>
-        </p>
+        <div class="fieldset-label">
+          <label class="label" for="text">Текст письма:</label>
+          <textarea name="text" id="text" rows="6" placeholder="В свободной форме"></textarea>
+        </div>
 
       </fieldset>
       <button class="button button-modal-window" type="submit" aria-label="Отправить форму">Отправить</button>
