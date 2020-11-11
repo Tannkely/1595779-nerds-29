@@ -429,6 +429,11 @@ body {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  width: 700px;
+}
+
+.sub-information {
+  width: 620px;
 }
 
 .heading-information {
